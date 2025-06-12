@@ -13,6 +13,11 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 app.use(cors());
 app.use(bodyParser.json());
 
+app.use(cors({
+  origin: ['https://university-chatbot-backend.onrender.com/'],
+  credentials: true
+}));
+
 // Serve static files from public directory
 app.use("/public", express.static(path.join(__dirname, "public")));
 
