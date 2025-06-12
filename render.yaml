@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: university-chatbot-backend
+    env: node
+    plan: free
+    buildCommand: cd backend && npm install
+    startCommand: node backend/server.mjs
+    rootDir: .
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false  # Add manually in Render Dashboard
+      - key: PORT
+        value: 10000  # Render sets it automatically, but optional
