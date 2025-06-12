@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gandhigram University Info</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background-image: url('images/background.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+  </style>
+</head>
+<body>
+  <header style="background-image: url('images/header-background.jpg'); background-size: cover; background-position: center;">
+    <img src="images/logo.png" alt="Gandhigram Logo" class="header-logo" />
+    <h1>🎓 Gandhigram University</h1>
+    <nav>
+      <button onclick="showSection('home')">Home</button>
+      <button onclick="showSection('about')">About</button>
+      <button onclick="showSection('contact')">Contact</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HOME SECTION -->
+    <section id="home" class="content-section">
+      <h2>Home</h2>
+      <ul>
+        <li onclick="showDetails('courses')">📚 Courses Offered</li>
+        <li onclick="showDetails('facilities')">🏫 Facilities</li>
+        <li onclick="showDetails('sports')">🏅 Sports</li>
+        <li onclick="showDetails('fees')">💰 Fees Structure</li>
+        <li onclick="showDetails('examination')">📝 Examination</li>
+      </ul>
+
+      <!-- Chatbot Section -->
+      <section id="chatbot">
+        <h2>🎓 Gandhigram</h2>
+        <div id="chat-output" class="chat-output"></div>
+        <input type="text" id="user-input" placeholder="Ask something..." onkeypress="if(event.key === 'Enter') sendChat()" />
+        <button onclick="sendChat()" class="send-button" style="background: transparent;">
+          <img src="images/logo.png" alt="Send" class="send-icon" />
+        </button>
+      </section>
+    </section>
+
+    <!-- ABOUT SECTION -->
+<section id="about" class="content-section hidden">
+  <h2>About Gandhigram University</h2>
+      <p><strong>University:</strong> Gandhigram Rural Institute is a Deemed University under the Ministry of Education, Govt. of India. It was established with a vision to promote rural development through quality education, training, and extension.</p>
+      <img src="images/university.jpg" alt="University" width="300">
+
+      <p><strong>College:</strong> The university consists of multiple constituent colleges that offer undergraduate, postgraduate, and doctoral programs in various disciplines including arts, science, education, engineering, and rural development.</p>
+      <img src="images/college.jpg" alt="College" width="300">
+
+      <p><strong>Institute:</strong> The main institute is known for its eco-friendly campus and strong emphasis on value-based education and community development. It has collaborations with national and international institutions.</p>
+
+      <p><strong>Admission:</strong> Admissions are based on entrance exams, academic merit, and reservation policies. Applications are submitted online via the <a href="https://www.ruraluniv.ac.in/admissions" ></a>.</p>
+      
+      <p><strong>Staffs:</strong> The university staff includes administrative personnel dedicated to supporting students and faculty. They ensure smooth operations of academic, residential, and extracurricular functions.</p>
+      
+      <p><strong>Faculty Members:</strong> Gandhigram University has experienced and qualified faculty across departments. They actively participate in research, training, and social outreach programs, helping students grow academically and socially.</p>
+      
+      <p><strong>Sports Achievements:</strong> The university has won multiple inter-collegiate competitions in volleyball, athletics, and kabaddi.</p>
+      <p><strong>Academic Achievements:</strong> Students and faculty are recognized nationally for innovations in rural technology and social work.</p>
+
+  <div style="display:flex;flex-wrap:wrap;gap:15px;align-items:center;">
+    <img src="images/about/university-front.jpg" alt="University Front View" width="300" />
+    <img src="images/about/college-campus.jpg" alt="College Campus" width="300" />
+  </div>
+
+  <p>
+    <strong>Gandhigram Rural Institute (GRI)</strong> – Deemed to be University, was founded in 1956 by Dr. T.S. Soundaram and Dr. G. Ramachandran, guided by the ideals of Mahatma Gandhi. Located in Gandhigram, Tamil Nadu, the institution is committed to rural development through quality education, research, and extension work.
+  </p>
+
+  <p>
+    The university emphasizes rural development, self-reliance, and sustainability. It offers a wide range of programs in arts, science, engineering, education, home science, and development studies. The serene, green campus supports holistic learning and community engagement.
+  </p>
+
+  <h3>📍 Location</h3>
+  <p>Gandhigram Rural Institute, Gandhigram, Dindigul District, Tamil Nadu – 624302, India</p>
+
+  <h3>🌐 Useful Links</h3>
+  <ul>
+    <li><a href="https://www.ruraluniv.ac.in" target="_blank">🌐 Official Website</a></li>
+  </ul>
+
+
+  <div style="margin-top:20px;">
+    <img src="images/about/gandhiji-statue.jpg" alt="Gandhiji Statue on Campus" width="300" />
+    <img src="images/about/founders.jpg" alt="Founders of GRI" width="300" />
+  </div>
+</section>
+
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="content-section hidden">
+      <h2>Contact</h2>
+      <p>🌐 Website: ruraluniv.ac.in</p>
+      <p>📧 Email: info@ruraluniv.ac.in</p>
+      <p>🏫 <strong>College Address:</strong> Gandhigram Rural Institute, Gandhigram – 624 302, Dindigul District, Tamil Nadu, India</p>
+      <p>🏢 <strong>Institute Address:</strong> The Registrar, Gandhigram Rural Institute – Deemed University, Gandhigram – 624 302</p>
+      <p>📞 <strong>Main Office Phone:</strong> +91-451-2452371</p>
+      <p>📞 <strong>Admission Office:</strong> +91-451-2452372</p>
+      <p>📞 <strong>Registrar Office:</strong> +91-451-2452373</p>
+      <p>📞 <strong>General Office:</strong> +91-451-2452374</p>
+      <p>📞 <strong>Security Office:</strong> +91-451-2452375</p>
+      <p>📞 <strong>Controller of Examinations:</strong> +91-451-2452376</p>
+      <p>📞 <strong>Faculty of Rural Health:</strong> +91-451-2452377</p>
+      <p>📞 <strong>Sanitary Office:</strong> +91-451-2452378</p>
+      <p>🧑‍🎓 <strong>Boys Hostel Contact:</strong> +91-451-2452380</p>
+      <p>👩‍🎓 <strong>Girls Hostel Contact:</strong> +91-451-2452381</p>
+    </section>
+
+
+    <!-- DETAILS SECTION -->
+    <section id="details" class="content-section hidden">
+      <h2 id="details-title"></h2>
+      <div id="details-content"></div>
+      <button onclick="goBack()">🔙 Back</button>
+    </section>
+  </main>
+
+  <script>
+    let previousTopic = 'home';
+    let currentTopic = '';
+
+    function showSection(id) {
+      document.querySelectorAll('.content-section').forEach(sec => sec.classList.add('hidden'));
+      document.getElementById(id).classList.remove('hidden');
+    }
+
+    function goBack() {
+      if (currentTopic.startsWith('facility-')) {
+        showDetails('facilities');
+        currentTopic = 'facilities';
+      } else {
+        showSection(previousTopic);
+        currentTopic = previousTopic;
+      }
+    }
+
+    function showDetails(topic) {
+      previousTopic = document.querySelector('section:not(.hidden)').id;
+      currentTopic = topic;
+      const content = {
+        courses: { title: 'Courses Offered', 
+        html: `
+        <h3>Courses</h3>
+            <ul>
+              <li onclick="showSubCourse('ug')">Undergraduate (UG)</li>
+              <li onclick="showSubCourse('pg')">Postgraduate (PG)</li>
+              <li onclick="showSubCourse('diploma')">Diploma Courses</li>
+            </ul>
+            <div id="sub-course-details"></div>`
+        },
+    
+        facilities: {
+          title: 'Campus Facilities',
+          html: `
+          <ul>
+            <li onclick="showFacility('transport')">Transport Facilities</li>
+            <li onclick="showFacility('library')">Library</li>
+            <li onclick="showFacility('laboratories')">Laboratories</li>
+            <li onclick="showFacility('canteen')">Canteen</li>
+            <li onclick="showFacility('cafeteria')">Cafeteria</li>
+            <li onclick="showFacility('greenpark')">Green/Park Facilities</li>
+            <li onclick="showFacility('parking')">Parking Facilities</li>
+            <li onclick="showFacility('internet')">Internet Facilities</li>
+            <li onclick="showFacility('washroom')">Washroom Facilities</li>
+            <li onclick="showFacility('hostel')">Hostel Facilities</li>
+            <li onclick="showFacility('computerlab')">Computer Lab</li>
+            <li onclick="showFacility('serverroom')">Server Room</li>
+            <li onclick="showFacility('surveillance')">Surveillance (CCTV)</li>
+          </ul>
+          <div id="facility-details"></div>`
+        },
+        sports: { 
+            title: 'Sports',
+            html: `
+             <p>Indoor and outdoor games like volleyball, kabaddi, athletics, cricket and table tennis are actively encouraged and facilitated.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:10px">
+              <img src="images/sports/volleyball.jpg" alt="Volleyball" width="140" />
+              <img src="images/sports/cricket.jpg" alt="Cricket" width="140" />
+              <img src="images/sports/kabaddi.jpg" alt="Kabaddi" width="140" />
+              <img src="images/sports/athletics.jpg" alt="Athletics" width="140" />
+              <img src="images/sports/tabletennis.jpg" alt="Table Tennis" width="140" />
+            </div>`
+        },
+    
+        
+        fees: { 
+  title: 'Fees Structure', 
+  html: `
+    <h3>Undergraduate (UG) Courses</h3>
+    <ul>
+      <li>B.A./B.Sc./B.Com/BBA – ₹8,000 to ₹15,000 per year</li>
+      <li>B.Ed – ₹25,000 per year</li>
+      <li>B.Tech. Civil Engineering – ₹35,000 per year</li>
+    </ul>
+
+    <h3>Postgraduate (PG) Courses</h3>
+    <ul>
+      <li>M.A./M.Sc./M.Com – ₹10,000 to ₹20,000 per year</li>
+      <li>MBA – ₹50,000 per year</li>
+      <li>M.Tech. Renewable Energy – ₹45,000 per year</li>
+      <li>M.Ed – ₹30,000 per year</li>
+    </ul>
+
+    <h3>Diploma Courses</h3>
+    <ul>
+      <li>Diploma in Sanitation/Computer Applications – ₹5,000 per year</li>
+      <li>Diploma in Rural Health/Agriculture – ₹6,000 per year</li>
+      <li>Diploma in Nutrition and Dietetics – ₹7,000 per year</li>
+    </ul>
+
+    <p><strong>Note:</strong> Fees are approximate and subject to change. Scholarships are available for eligible students.</p>
+  `
+},
+        
+        examination: {
+            title: 'Examination', 
+            html: `<p>Semester-wise examinations as per academic calendar, including internal assessments and practicals.</p>
+                   <img src="images/exam-hall.jpg" alt="Examination Hall" class="details-image" />`
+        }
+      };
+
+      document.getElementById('details-title').textContent = content[topic].title;
+      document.getElementById('details-content').innerHTML = content[topic].html;
+      showSection('details');
+    }
+
+    function showSubCourse(type) {
+      const courses = {
+        ug: `
+          <h4>UG Courses (3-4 Years)</h4>
+          <ul>
+            <li>B.A. Rural Development</li>
+            <li>B.A. Economics</li>
+            <li>B.Sc. Mathematics</li>
+            <li>B.Sc. Physics</li>
+            <li>B.Sc. Chemistry</li>
+            <li>B.Sc. Computer Science</li>
+            <li>B.Com</li>
+            <li>BBA</li>
+            <li>B.Ed</li>
+            <li>B.Tech. Civil Engineering (4 Years)</li>
+            <li>B.Sc. Home Science</li>
+            <li>B.Sc. Food Science and Nutrition</li>
+          </ul>
+        `,
+        pg: `
+          <h4>PG Courses (2 Years)</h4>
+          <ul>
+            <li>M.A. Development Studies</li>
+            <li>M.A. Economics</li>
+            <li>M.A. Tamil</li>
+            <li>M.Sc. Physics</li>
+            <li>M.Sc. Chemistry</li>
+            <li>M.Sc. Computer Science</li>
+            <li>M.Sc. Home Science</li>
+            <li>M.Com</li>
+            <li>MBA</li>
+            <li>M.Ed</li>
+            <li>M.Tech. Renewable Energy</li>
+          </ul>
+        `,
+        diploma: `
+          <h4>Diploma Courses (1 Year)</h4>
+          <ul>
+            <li>Diploma in Sanitation</li>
+            <li>Diploma in Computer Applications</li>
+            <li>Diploma in Rural Health</li>
+            <li>Diploma in Agriculture</li>
+            <li>Diploma in Nutrition and Dietetics</li>
+          </ul>
+        `
+      };
+      document.getElementById('sub-course-details').innerHTML = courses[type];
+    }
+
+    function showFacility(key) {
+      const facilities = {
+        transport: {title:'Transport Facilities',desc:'University buses connect nearby towns and villages ensuring safe travel.' ,img:'images/transport.jpg'},
+        library  : {title:'Library',desc:'Extensive collection of books, journals and digital resources for study.' ,img:'images/library.jpg'},
+        laboratories:{title:'Laboratories',desc:'Well‑equipped science and computer labs with modern instruments.' ,img:'images/laboratories.jpg'},
+        canteen  : {title:'Canteen',desc:'Hygienic canteen offering nutritious meals and snacks.' ,img:'images/canteen.jpg'},
+        cafeteria: {title:'Cafeteria',desc:'Cafeteria with diverse food choices and comfortable seating.' ,img:'images/cafeteria.jpg'},
+        greenpark:{title:'Green/Park Facilities',desc:'Lush green parks and gardens for leisure and relaxation.' ,img:'images/greenpark.jpg'},
+        parking  : {title:'Parking Facilities',desc:'Ample parking space for students, staff and visitors.'},
+        internet : {title:'Internet Facilities',desc:'High‑speed campus‑wide Wi‑Fi for academic and admin use.'},
+        washroom : {title:'Washroom Facilities',desc:'Clean separate washrooms for boys, girls, male and female staff.'},
+        hostel:    {title: 'hostel facilities', desc:'Separate well-maintained hostels for boys and girls with 24/7 security, clean rooms, and mess facilities. Each hostel includes reading rooms, recreation areas, and internet access.',img:'images/hostel/boys-hostel-room.jpg',},
+        computerlab:{title:'Computer Lab',desc:'Over 200 computers with latest software and high‑speed internet.' ,img:'images/computerlab.jpg'},
+        serverroom:{title:'Server Room',desc:'Secure server room with backup power and climate control.' ,img:'images/serverroom.jpg'},
+        surveillance:{title:'Surveillance (CCTV)',desc:'CCTV cameras across campus for safety and security.' ,img:'images/surveillance.jpg'}
+      };
+      const f = facilities[key];
+      if(f){
+        document.getElementById('details-title').textContent = f.title;
+        document.getElementById('details-content').innerHTML = `<p>${f.desc}</p>` + (f.img ? `<img src="${f.img}" alt="${f.title}" class="details-image" />` : '');
+        showSection('details');
+      }
+    }
+
+    async function sendChat() {
+      const input = document.getElementById('user-input');
+      const message = input.value.trim();
+      if (!message) return;
+      const chatOutput = document.getElementById('chat-output');
+      chatOutput.innerHTML += `<div><strong>You:</strong> ${message}</div>`;
+      input.value = '';
+      const res = await fetch('http://localhost:4003/chat', {
+        method: 'POST',
+        headers: {'Content-Type':'application/json'},
+        body: JSON.stringify({ message })
+      });
+      const data = await res.json();
+      chatOutput.innerHTML += `<div><strong>GandhigramBot:</strong> ${data.reply}</div>`;
+      chatOutput.scrollTop = chatOutput.scrollHeight;
+    }
+  </script>
+</body>
+</html>

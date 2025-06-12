@@ -1,0 +1,123 @@
+/* style.css – refreshed */
+
+/* ---------- Base layout ---------- */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* ---------- Header ---------- */
+header {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color:white;
+  background-image: url('images/header-bg.jpg'); /* ensure this image exists */
+  background-size: cover;
+  background-position: center;
+  border-bottom: 2px solid rgba(255,255,255,0.3);
+}
+
+.header-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+h1 {
+  font-size: 28px;
+  margin: 0;
+}
+
+/* ---------- Nav buttons ---------- */
+nav button {
+  margin-left: 10px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #0074d9;
+  color: #fff;
+  transition: background 0.3s;
+}
+nav button:hover {
+  background-color: #005fa3;
+}
+
+/* ---------- Content sections ---------- */
+.content-section {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.85); /* lighter background so body image shows around */
+  color: #000;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+.hidden { display: none; }
+
+/* ---------- Lists ---------- */
+ul { list-style: none; padding: 0; }
+ul li {
+  margin: 10px 0;
+  padding: 10px;
+  background: rgba(0, 64, 128, 0.10);
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+ul li:hover { background: rgba(0, 64, 128, 0.25); }
+
+/* ---------- Chatbot ---------- */
+#chatbot { margin-top: 50px; }
+.chat-output {
+  background: rgba(0,0,0,0.05);
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 8px;
+  padding: 10px;
+  height: 190px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+#user-input {
+  width: 70%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button.send-button {
+  border: none;
+  background: transparent; /* transparent background as requested */
+  cursor: pointer;
+  padding: 0;
+}
+.send-icon {
+  width: 30px;
+  height: 30px;
+}
+
+/* ---------- Images in details ---------- */
+.details-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* ---------- Responsive tweaks ---------- */
+@media (max-width: 768px) {
+  header { flex-direction: column; text-align: center; }
+  nav button { margin: 8px 4px; padding: 8px 12px; }
+  #user-input { width: 65%; }
+}
