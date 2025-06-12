@@ -313,7 +313,7 @@
       const chatOutput = document.getElementById('chat-output');
       chatOutput.innerHTML += `<div><strong>You:</strong> ${message}</div>`;
       input.value = '';
-      const res = await fetch('http://localhost:4003/chat', {
+      const res = await fetch('https://university-chatbot-backend.onrender.com/', {
         method: 'POST',
         headers: {'Content-Type':'application/json'},
         body: JSON.stringify({ message })
