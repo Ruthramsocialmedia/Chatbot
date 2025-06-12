@@ -754,6 +754,6 @@ app.get("*", (req, res) => {
 
 // Use PORT from environment variables (Render provides this)
 const PORT = process.env.PORT || 4003;
-app.listen(PORT, "0.0.0.0", () => {
+app.listen(PORT,() => {
   console.log(`🚀 Server running on port ${PORT}`);
 });
